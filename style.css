@@ -15,6 +15,8 @@ header{
   max-width: 100%;
   height: 10vh;
   background-color: #1d1b1c;
+  position: none;
+  top:none;
 }
 .central-movie{
   background-color:  #1d1b1c;
@@ -28,7 +30,7 @@ header{
 .central-movie-xs{
     background-color:  #1d1b1c;
     position: sticky;
-    top:0;
+    top:10%;
 }
 
 .central-movie-xs img{
@@ -51,22 +53,20 @@ header{
 }
 
 @media screen and (max-width: 660px) {
+  header{
+    position: sticky;
+    top: 0;
+  }
   .central-movie img{
     display: none;
-
-  }
-
-  .movie img{
-    max-width: 100%;
-
   }
 
   .central-movie-xs img{
     display: block;
-    position: sticky;
-    top:0;
   }
 
-
+  .movie img{
+    max-width: 100%;
+  }
 
 }
